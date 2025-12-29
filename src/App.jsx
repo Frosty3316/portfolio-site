@@ -13,6 +13,12 @@ const projects = [
     live: "https://Frosty3316.github.io/todo-app/",
     tech: "HTML, CSS, JavaScript",
   },
+  {
+  title: "Weather App",
+  desc: "React app that fetches real-time weather data using the OpenWeather API, with loading and error handling.",
+  live: "https://Frosty3316.github.io/weather-app/",
+  tech: "React, API, JavaScript",
+  },
 ];
 
 export default function App() {

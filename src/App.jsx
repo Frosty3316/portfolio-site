@@ -32,10 +32,17 @@ export default function App() {
       <section>
         <h2>Projects</h2>
         <div className="projects">
-          {projects.map((p) => (
-            <ProjectCard key={p.title} project={p} />
+          {projects.map((p, i) => (
+            <div
+              key={p.title}
+              className="fade-in"
+              style={{ animationDelay: `${i * 120}ms` }}
+            >
+              <ProjectCard project={p} />
+            </div>
           ))}
         </div>
+
       </section>
 
       <footer>

@@ -1,4 +1,4 @@
-# Frosty’s Frontend Portfolio ✨
+# Faustina’s Frontend Portfolio ✨
 
 A collection of frontend projects focused on clean UI, smooth interactions, and thoughtful design.
 

@@ -38,7 +38,7 @@ export default function App() {
     <div className="container">
       <header>
         <h1>Hi, I’m Faustina Yarathingal</h1>
-        <p>Frontend developer learning by building real projects.</p>
+        <p>Full stack developer who designs, builds, and ships complete web applications.</p>
       </header>
 
       <section>

@@ -1,16 +1,30 @@
-# React + Vite
+# Faustina’s Frontend Portfolio ✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A collection of frontend projects focused on clean UI, smooth interactions, and thoughtful design.
 
-Currently, two official plugins are available:
+## 🚀 Projects
+- **Weather App** — React app with live weather + ambient visuals
+- **TaskNest** — Minimal to-do app with micro-animations
+- **FocusFlow** — SaaS-style landing page
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+- HTML
+- CSS
+- JavaScript
+- React
 
-## React Compiler
+## 🌍 Live Portfolio
+👉 https://Frosty3316.github.io/portfolio-site
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 About Me
+Frontend developer focused on building clean, responsive, and visually polished web experiences.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Development
+This project was bootstrapped with Vite + React.
+
+To run locally:
+```bash
+npm install
+npm run dev

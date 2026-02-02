@@ -59,6 +59,16 @@ export default function App() {
 
       <footer>
         <p>Contact: frostyarathingal@gmail.com</p>
+        <p>
+          GitHub:{" "}
+          <a
+            href="https://github.com/Frosty3316"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github.com/Frosty3316
+          </a>
+        </p>
       </footer>
     </div>
   );

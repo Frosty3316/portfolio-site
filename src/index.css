@@ -30,9 +30,9 @@ body {
 }
 
 .page {
-  max-width: 1040px;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 1.25rem 1.5rem 4rem;
+  padding: 1.25rem clamp(1.5rem, 5vw, 2.75rem) 4rem;
 }
 
 .skip-link {
@@ -94,7 +94,11 @@ nav a:focus-visible {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 3rem 0 4rem;
+  padding: clamp(2rem, 5vw, 3.25rem);
+  margin-bottom: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: color-mix(in srgb, var(--bg-elevated) 72%, transparent);
 }
 
 .hero > * {
@@ -128,9 +132,9 @@ h1 {
   font-family: var(--serif);
   font-size: clamp(2.2rem, 5vw, 3.4rem);
   font-weight: 700;
-  line-height: 1.15;
-  margin: 0 0 1rem;
-  max-width: 18ch;
+  line-height: 1.2;
+  margin: 0 0 1.15rem;
+  max-width: 20ch;
 }
 
 h2 {
@@ -289,37 +293,36 @@ section {
   gap: 1.75rem;
 }
 
-@media (min-width: 720px) {
-  .about-grid {
-    grid-template-columns: 1.1fr 0.9fr;
-    align-items: start;
-  }
+.about-copy {
+  max-width: 46rem;
 }
 
 .skill-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.9rem;
   list-style: none;
   margin: 0;
-  padding: 1.25rem;
+  padding: 0;
+}
+
+.skill-groups > li {
+  padding: 1rem 1.1rem 1.1rem;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: 16px;
 }
 
-.skill-groups li + li {
-  margin-top: 1rem;
-}
-
 .skill-groups h3 {
-  margin: 0 0 0.2rem;
-  font-size: 0.85rem;
-  letter-spacing: 0.06em;
+  margin: 0 0 0.7rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--accent);
 }
 
-.skill-groups p {
+.skill-groups .chips {
   margin: 0;
-  color: var(--muted);
 }
 
 footer {

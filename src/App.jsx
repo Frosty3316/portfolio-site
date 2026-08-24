@@ -47,15 +47,53 @@ const projects = [
 const skills = [
   {
     label: "Frontend",
-    items: ["HTML", "CSS", "JavaScript", "React"],
+    items: [
+      "React",
+      "JavaScript",
+      "TypeScript",
+      "HTML5",
+      "CSS3",
+      "Vite",
+      "Mantine UI",
+      "React DnD",
+      "Recharts",
+    ],
   },
   {
     label: "Backend",
-    items: ["Node.js", "WebSockets", "Socket.IO", "REST APIs"],
+    items: [
+      "Node.js",
+      "Express.js",
+      "Python",
+      "REST APIs",
+      "JWT",
+      "Socket.IO",
+      "WebSockets",
+    ],
   },
   {
-    label: "Practices",
-    items: ["Responsive layout", "Error handling", "Git & GitHub Pages"],
+    label: "Data",
+    items: ["PostgreSQL", "MySQL", "Prisma", "Hive"],
+  },
+  {
+    label: "Mobile",
+    items: ["Flutter", "Dart", "Riverpod"],
+  },
+  {
+    label: "Testing",
+    items: ["Vitest", "Playwright"],
+  },
+  {
+    label: "Tools",
+    items: [
+      "Git",
+      "GitHub",
+      "Docker",
+      "Netlify",
+      "Render",
+      "GitHub Pages",
+      "Postman",
+    ],
   },
 ];
 
@@ -119,17 +157,23 @@ export default function App() {
           </div>
           <div className="about-grid">
             <p className="about-copy">
-              I work across the stack: layout and interaction on the client,
-              APIs and sockets on the server. Recent work includes a
-              collaborative document editor, a weather client with loading and
-              error handling, and smaller HTML/CSS/JS apps that keep the
-              fundamentals sharp.
+              I work across the stack: interfaces on the client, APIs and
+              sockets on the server, and data in between. Comfortable with
+              authentication, CRUD, API integration, backend structure, and
+              real-time, responsive apps. Recent work includes a collaborative
+              editor, a weather client with honest loading and error states,
+              and smaller HTML/CSS/JS projects that keep the fundamentals
+              sharp.
             </p>
             <ul className="skill-groups">
               {skills.map((group) => (
                 <li key={group.label}>
                   <h3>{group.label}</h3>
-                  <p>{group.items.join(" · ")}</p>
+                  <ul className="chips">
+                    {group.items.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
                 </li>
               ))}
             </ul>

@@ -13,7 +13,7 @@ const projects = [
   {
     title: "Weather App",
     desc: "Looks up live conditions with the OpenWeather API, including loading and error states so the UI stays honest when the network fails.",
-    live: "https://Frosty3316.github.io/weather-app/",
+    live: "https://atmo-pink.vercel.app/",
     tech: "React, API, JavaScript",
     accent: "#38bdf8",
     image: "projects/weather.png",

@@ -27,12 +27,12 @@ const projects = [
     image: "projects/ai-chatbot.png",
   },
   {
-    title: "TaskNest To-Do App",
-    desc: "Add, complete, and delete tasks with localStorage so the list survives a refresh — a small app with a complete user flow.",
-    live: "https://Frosty3316.github.io/todo-app/",
-    tech: "HTML, CSS, JavaScript",
+    title: "TaskNest",
+    desc: "A today-first daily planner — Inbox is capture, Today is what you’ll finish. Local-only persistence, keyboard shortcuts, drag-and-drop, and an undo that doesn’t punish a misclick.",
+    live: "https://tasknest-wheat.vercel.app/",
+    tech: "React, TypeScript, Vite, Vitest",
     accent: "#34d399",
-    image: "projects/todo-app.png",
+    image: "projects/tasknest.png",
   },
   {
     title: "FocusFlow Landing Page",
@@ -164,8 +164,8 @@ export default function App() {
               authentication, CRUD, API integration, backend structure, and
               real-time, responsive apps. Recent work includes a collaborative
               editor, Atmo — a Next.js weather app with a server-side API —
-              and smaller HTML/CSS/JS projects that keep the fundamentals
-              sharp.
+              and TaskNest, a today-first planner with careful interaction
+              design. Smaller HTML/CSS pieces keep the fundamentals sharp.
             </p>
             <ul className="skill-groups">
               {skills.map((group) => (

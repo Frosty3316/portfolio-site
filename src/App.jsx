@@ -11,12 +11,12 @@ const projects = [
     featured: true,
   },
   {
-    title: "Weather App",
-    desc: "Looks up live conditions with the OpenWeather API, including loading and error states so the UI stays honest when the network fails.",
+    title: "Atmo",
+    desc: "A Next.js weather app with a server-only API layer — search a city for current conditions, the next 12 hours, and a 7-day outlook, with a sky that follows the weather.",
     live: "https://atmo-pink.vercel.app/",
-    tech: "React, API, JavaScript",
+    tech: "Next.js, React, Open-Meteo, API",
     accent: "#38bdf8",
-    image: "projects/weather.png",
+    image: "projects/atmo.png",
   },
   {
     title: "AI Portfolio Chatbot",
@@ -49,6 +49,7 @@ const skills = [
     label: "Frontend",
     items: [
       "React",
+      "Next.js",
       "JavaScript",
       "TypeScript",
       "HTML5",
@@ -90,6 +91,7 @@ const skills = [
       "GitHub",
       "Docker",
       "Netlify",
+      "Vercel",
       "Render",
       "GitHub Pages",
       "Postman",
@@ -161,7 +163,7 @@ export default function App() {
               sockets on the server, and data in between. Comfortable with
               authentication, CRUD, API integration, backend structure, and
               real-time, responsive apps. Recent work includes a collaborative
-              editor, a weather client with honest loading and error states,
+              editor, Atmo — a Next.js weather app with a server-side API —
               and smaller HTML/CSS/JS projects that keep the fundamentals
               sharp.
             </p>

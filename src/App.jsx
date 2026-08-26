@@ -159,13 +159,11 @@ export default function App() {
           </div>
           <div className="about-grid">
             <p className="about-copy">
-              I work across the stack: interfaces on the client, APIs and
-              sockets on the server, and data in between. Comfortable with
-              authentication, CRUD, API integration, backend structure, and
-              real-time, responsive apps. Recent work includes a collaborative
-              editor, Atmo — a Next.js weather app with a server-side API —
-              and TaskNest, a today-first planner with careful interaction
-              design. Smaller HTML/CSS pieces keep the fundamentals sharp.
+              I design, build, and ship complete web applications — interfaces
+              on the client, APIs and sockets on the server, and data in
+              between. That includes authentication, CRUD, API integration,
+              backend structure, real-time features, and responsive layouts,
+              from first sketch through deploy.
             </p>
             <ul className="skill-groups">
               {skills.map((group) => (

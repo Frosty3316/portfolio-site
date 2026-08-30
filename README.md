@@ -5,7 +5,7 @@ A collection of frontend projects focused on clean UI, smooth interactions, and 
 ## 🚀 Projects
 - **Weather App** — React app with live weather + ambient visuals
 - **TaskNest** — Minimal to-do app with micro-animations
-- **FocusFlow** — SaaS-style landing page
+- **FocusFlow** — Local-first focus timer with a working hero clock
 
 ## 🛠️ Tech Stack
 - HTML

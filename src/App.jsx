@@ -35,12 +35,12 @@ const projects = [
     image: "projects/tasknest.png",
   },
   {
-    title: "FocusFlow Landing Page",
-    desc: "A responsive marketing landing page with a clear hierarchy, mobile-first layout, and reusable CSS sections.",
-    live: "https://Frosty3316.github.io/focusflow-landing/",
-    tech: "HTML, CSS",
-    accent: "#4ade80",
-    image: "projects/focusflow.png",
+    title: "FocusFlow",
+    desc: "A local-first focus timer wrapped in a product landing page — the hero clock is real. Pick 25, 15, or 5 minutes, work until the ring empties, and keep streaks on this device.",
+    live: "https://frosty3316.github.io/focusflow-landing/",
+    tech: "React, TypeScript, Vite, Vitest",
+    accent: "#818cf8",
+    image: "projects/focusflow-hero.png",
   },
 ];
 

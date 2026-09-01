@@ -2,33 +2,33 @@ import ProjectCard from "./components/ProjectCard";
 
 const projects = [
   {
-    title: "Mini Docs",
-    desc: "A real-time collaborative editor with live cursors, presence, and multiple documents — built so more than one person can write in the same file at once.",
-    live: "https://harmonious-klepon-777dcc.netlify.app/",
-    tech: "React, WebSockets, Node.js, Socket.IO",
-    accent: "#6366f1",
-    image: "projects/mini-docs.png",
+    title: "Inkroom",
+    desc: "A shared writing room. Open a page, send the link, and someone can join live. Named pages, presence, and find-in-page, over Socket.IO.",
+    live: "https://inkroom-swart.vercel.app/",
+    tech: "React, Node.js, Socket.IO, TipTap",
+    accent: "#e8a07a",
+    image: "projects/inkroom.png",
     featured: true,
   },
   {
     title: "Atmo",
-    desc: "A Next.js weather app with a server-only API layer — search a city for current conditions, the next 12 hours, and a 7-day outlook, with a sky that follows the weather.",
+    desc: "A Next.js weather app with a server-only API layer. Search a city for current conditions, the next 12 hours, and a 7-day outlook, with a sky that follows the weather.",
     live: "https://atmo-pink.vercel.app/",
     tech: "Next.js, React, Open-Meteo, API",
     accent: "#38bdf8",
     image: "projects/atmo.png",
   },
   {
-    title: "AI Portfolio Chatbot",
-    desc: "A lightweight chatbot that answers questions about my projects and this portfolio, wired to an API rather than hardcoded replies.",
-    live: "https://frosty3316.github.io/ai-chatbot/",
-    tech: "JavaScript, API Integration",
-    accent: "#a78bfa",
-    image: "projects/ai-chatbot.png",
+    title: "Dossier",
+    desc: "A GPT-style assistant for this site. Ask about my work as often as you like; general questions go through a hosted model, with a daily cap and no sign-in.",
+    live: "https://dossier-pink.vercel.app/",
+    tech: "React, TypeScript, Groq, Vercel",
+    accent: "#d4b896",
+    image: "projects/dossier.png",
   },
   {
     title: "TaskNest",
-    desc: "A today-first daily planner — Inbox is capture, Today is what you’ll finish. Local-only persistence, keyboard shortcuts, drag-and-drop, and an undo that doesn’t punish a misclick.",
+    desc: "A today-first daily planner. Inbox is capture; Today is what you’ll finish. Local-only persistence, keyboard shortcuts, drag-and-drop, and an undo that doesn’t punish a misclick.",
     live: "https://tasknest-wheat.vercel.app/",
     tech: "React, TypeScript, Vite, Vitest",
     accent: "#34d399",
@@ -36,7 +36,7 @@ const projects = [
   },
   {
     title: "FocusFlow",
-    desc: "A local-first focus timer wrapped in a product landing page — the hero clock is real. Pick 25, 15, or 5 minutes, work until the ring empties, and keep streaks on this device.",
+    desc: "A local-first focus timer wrapped in a product landing page. The hero clock is real. Pick 25, 15, or 5 minutes, work until the ring empties, and keep streaks on this device.",
     live: "https://frosty3316.github.io/focusflow-landing/",
     tech: "React, TypeScript, Vite, Vitest",
     accent: "#818cf8",
@@ -55,8 +55,9 @@ const skills = [
       "HTML5",
       "CSS3",
       "Vite",
+      "TipTap",
+      "dnd-kit",
       "Mantine UI",
-      "React DnD",
       "Recharts",
     ],
   },
@@ -71,6 +72,10 @@ const skills = [
       "Socket.IO",
       "WebSockets",
     ],
+  },
+  {
+    label: "AI",
+    items: ["Groq", "Vercel AI SDK"],
   },
   {
     label: "Data",
@@ -94,6 +99,7 @@ const skills = [
       "Vercel",
       "Render",
       "GitHub Pages",
+      "Figma",
       "Postman",
     ],
   },
@@ -122,7 +128,7 @@ export default function App() {
           <p className="eyebrow">Full stack developer</p>
           <h1 id="hero-heading">Hi, I’m Faustina Yarathingal</h1>
           <p className="lede">
-            I design, build, and ship complete web applications — from
+            I design, build, and ship complete web and mobile applications; from
             responsive interfaces to real-time backends.
           </p>
           <div className="hero-actions">
@@ -137,8 +143,7 @@ export default function App() {
 
         <section id="projects" aria-labelledby="projects-heading">
           <div className="section-head">
-            <h2 id="projects-heading">Selected work</h2>
-            <p>Live demos first. Mini Docs is the fullest stack piece.</p>
+            <h2 id="projects-heading">Work</h2>
           </div>
           <div className="projects">
             {projects.map((project, index) => (
@@ -159,11 +164,10 @@ export default function App() {
           </div>
           <div className="about-grid">
             <p className="about-copy">
-              I design, build, and ship complete web applications — interfaces
-              on the client, APIs and sockets on the server, and data in
-              between. That includes authentication, CRUD, API integration,
-              backend structure, real-time features, and responsive layouts,
-              from first sketch through deploy.
+              I design, build, and ship complete web and mobile applications.
+              Interfaces on the client, APIs and sockets on the server, and data
+              in between. Auth, CRUD, API work, real-time features, and layouts
+              that hold up on a phone, from first sketch through deploy.
             </p>
             <ul className="skill-groups">
               {skills.map((group) => (
@@ -183,7 +187,7 @@ export default function App() {
 
       <footer id="contact">
         <h2>Contact</h2>
-        <p>Open to internships, collaborations, and interesting web work.</p>
+        <p>Open to internships, collaborations, and interesting work.</p>
         <ul className="contact-links">
           <li>
             <a href="mailto:frostyarathingal@gmail.com">frostyarathingal@gmail.com</a>

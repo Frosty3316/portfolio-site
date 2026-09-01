@@ -1,30 +1,26 @@
-# Faustina’s Frontend Portfolio ✨
+# Faustina Yarathingal
 
-A collection of frontend projects focused on clean UI, smooth interactions, and thoughtful design.
+Portfolio of web and mobile work. Live demos first.
 
-## 🚀 Projects
-- **Weather App** — React app with live weather + ambient visuals
-- **TaskNest** — Minimal to-do app with micro-animations
-- **FocusFlow** — Local-first focus timer with a working hero clock
+**Live:** https://frosty3316.github.io/portfolio-site/
 
-## 🛠️ Tech Stack
-- HTML
-- CSS
-- JavaScript
-- React
+## Projects
 
-## 🌍 Live Portfolio
-👉 https://Frosty3316.github.io/portfolio-site
+- **Inkroom** — shared writing room with live presence ([demo](https://inkroom-swart.vercel.app/))
+- **Atmo** — weather app with a server-only API layer ([demo](https://atmo-pink.vercel.app/))
+- **Dossier** — GPT-style assistant for this site ([demo](https://dossier-pink.vercel.app/))
+- **TaskNest** — today-first local planner ([demo](https://tasknest-wheat.vercel.app/))
+- **FocusFlow** — local-first focus timer on a product landing page ([demo](https://frosty3316.github.io/focusflow-landing/))
 
-## 📌 About Me
-Frontend developer focused on building clean, responsive, and visually polished web experiences.
+## Stack
 
----
+React, Next.js, TypeScript, Node.js, Express, Socket.IO, Vite, Groq, Flutter, Vitest. Hosted on Vercel, Render, and GitHub Pages.
 
-## 🛠️ Development
-This project was bootstrapped with Vite + React.
+## Local
 
-To run locally:
 ```bash
 npm install
 npm run dev
+```
+
+Vite + React. `base` is `/portfolio-site/` for GitHub Pages.

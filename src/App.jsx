@@ -55,6 +55,7 @@ const skills = [
       "HTML5",
       "CSS3",
       "Vite",
+      "UI/UX",
       "TipTap",
       "dnd-kit",
       "Mantine UI",
@@ -75,11 +76,19 @@ const skills = [
   },
   {
     label: "AI",
-    items: ["Groq", "Vercel AI SDK"],
+    items: ["Groq", "Vercel AI SDK", "AI/ML basics"],
   },
   {
     label: "Data",
-    items: ["PostgreSQL", "MySQL", "Prisma", "Hive"],
+    items: ["PostgreSQL", "MySQL", "Prisma", "Hive", "Data Analysis"],
+  },
+  {
+    label: "Forensics",
+    items: [
+      "Fingerprints",
+      "Questioned documents",
+      "Digital and cyber forensics",
+    ],
   },
   {
     label: "Mobile",
@@ -100,6 +109,8 @@ const skills = [
       "Render",
       "GitHub Pages",
       "Figma",
+      "Adobe Creative Suite",
+      "Microsoft Office",
       "Postman",
     ],
   },
@@ -167,7 +178,9 @@ export default function App() {
               I design, build, and ship complete web and mobile applications.
               Interfaces on the client, APIs and sockets on the server, and data
               in between. Auth, CRUD, API work, real-time features, and layouts
-              that hold up on a phone, from first sketch through deploy.
+              that hold up on a phone, from first sketch through deploy. I also
+              have forensic-science training in fingerprints, questioned
+              documents, and digital forensics, plus UI/UX and data analysis.
             </p>
             <ul className="skill-groups">
               {skills.map((group) => (

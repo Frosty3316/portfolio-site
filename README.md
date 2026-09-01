@@ -14,7 +14,7 @@ Portfolio of web and mobile work. Live demos first.
 
 ## Stack
 
-React, Next.js, TypeScript, Node.js, Express, Socket.IO, Vite, Groq, Flutter, Vitest. Hosted on Vercel, Render, and GitHub Pages.
+React, Next.js, TypeScript, Node.js, Express, Socket.IO, Vite, Groq, Flutter, Vitest, Figma, Adobe Creative Suite. Hosted on Vercel, Render, and GitHub Pages.
 
 ## Local
 

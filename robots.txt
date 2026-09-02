@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://frosty3316.github.io/portfolio-site/sitemap.xml

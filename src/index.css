@@ -149,11 +149,17 @@ h3 {
 }
 
 .lede,
-.about-copy,
 .section-head p {
   color: var(--muted);
   max-width: 40rem;
   margin: 0;
+}
+
+.about-copy {
+  color: var(--muted);
+  margin: 0;
+  width: 100%;
+  max-width: none;
 }
 
 .hero-actions {
@@ -291,19 +297,29 @@ section {
 .about-grid {
   display: grid;
   gap: 1.75rem;
-}
-
-.about-copy {
-  max-width: 46rem;
+  width: 100%;
 }
 
 .skill-groups {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: 1fr;
   gap: 0.9rem;
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
+}
+
+@media (min-width: 560px) {
+  .skill-groups {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 720px) {
+  .skill-groups {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 .skill-groups > li {

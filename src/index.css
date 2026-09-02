@@ -21,6 +21,12 @@ html {
   scroll-behavior: smooth;
 }
 
+#projects,
+#about,
+#contact {
+  scroll-margin-top: 4.75rem;
+}
+
 body {
   margin: 0;
   background: var(--bg);
@@ -282,11 +288,22 @@ section {
   font-size: 0.8rem;
 }
 
+.card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.25rem;
+}
+
 .card__link {
   color: var(--accent-strong);
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 0.2em;
+}
+
+.card__link--muted {
+  color: var(--muted);
+  font-weight: 500;
 }
 
 .card__link:hover,

@@ -5,7 +5,12 @@ export default function ProjectCard({ project, featured = false }) {
   return (
     <article className={featured ? "card card--featured" : "card"}>
       <div className="card__visual" style={{ "--accent": project.accent }}>
-        <img src={imageSrc} alt="" />
+        <img
+          src={imageSrc}
+          alt={`${project.title} screenshot`}
+          loading={featured ? "eager" : "lazy"}
+          decoding="async"
+        />
       </div>
       <div className="card__body">
         {featured ? <p className="card__eyebrow">Featured</p> : null}
@@ -16,16 +21,30 @@ export default function ProjectCard({ project, featured = false }) {
             <li key={tech}>{tech}</li>
           ))}
         </ul>
-        <a
-          className="card__link"
-          href={project.live}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={`View ${project.title} live demo (opens in a new tab)`}
-        >
-          Live demo
-          <span aria-hidden="true"> →</span>
-        </a>
+        <div className="card__links">
+          <a
+            className="card__link"
+            href={project.live}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`View ${project.title} live demo (opens in a new tab)`}
+          >
+            Live demo
+            <span aria-hidden="true"> →</span>
+          </a>
+          {project.github ? (
+            <a
+              className="card__link card__link--muted"
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View ${project.title} source on GitHub (opens in a new tab)`}
+            >
+              Source
+              <span aria-hidden="true"> →</span>
+            </a>
+          ) : null}
+        </div>
       </div>
     </article>
   );
